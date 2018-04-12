@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" href="../src/App.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,27 +24,44 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <div>
-      <h1 class="name">Jason Saenz</h1>
-    </div>
-    <div class="links">
-      <div class="row">
-        
+  <title>Jason Saenz</title>
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="name col-md-8">
+        <h1>
+          Jason Saenz
+        </h1>
+      </div>
+      <div class="row col-md-4">
+        <div class="links">
+          <a class="high" href="index.html">About Me</a>
+          <p class="high"> | </p>
+          <a class="high" href="portfolio.html">Portfolio</a>
+          <p class="high"> | </p>
+          <a class="high" href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
-    <div id="container"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  </header>
+  <div class="row">
+    <div class="col-md-7 main" id="root"></div>
+    <div class="col-md-5 exLinks">
+      <h2>Connect With Me</h2>
+      <a href="https://www.linkedin.com/in/jasonmsaenz/" target="_blank">
+        <img class="logo" id="git" src="../src/assets/logos/In-2C-66px-TM.png" alt="Linkedin" >
+      </a>
+      <a href="https://github.com/jmsaenz5" target="_blank">
+        <img class="logo" src="../src/assets/logos/GitHub-Mark-64px.png" alt="GitHub">
+      </a>
+      <a href="https://stackoverflow.com/users/8468477/jmsaenz5?tab=profile" target="_blank">
+        <img class="logo" src="../src/assets/logos/so-icon.png" alt="Stack Overflow">
+      </a>
+    </div>
+  </div>
+  </div>
+</body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>

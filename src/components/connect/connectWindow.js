@@ -1,36 +1,38 @@
-import react from "react";
+import React from "react";
 
-const connectWindow = () => (
+
+const ConnectWindow = () => (
   <nav>
-    <h2>Connect With Me</h2>
-    <div className="row">
-      <a href="https://www.linkedin.com/in/jasonmsaenz/">
-        <img
-          className="logo"
-          id="git"
-          src="../../assets/logos/linkedin.png"
-          alt="Linkedin"
-          target="_blank"
-        />
-      </a>
-      <a href="https://github.com/jmsaenz5">
-        <img
-          className="logo"
-          src="../../assets/logos/github.png"
-          alt="GitHub"
-          target="_blank"
-        />
-      </a>
-      <a href="https://stackoverflow.com/users/8468477/jmsaenz5?tab=profile">
-        <img
-          className="logo"
-          src="../../assets/logos/stack.png"
-          alt="Stack Overflow"
-          target="_blank"
-        />
-      </a>
-    </div>
+    <section>
+      <h2 className="headline">Connect With Me</h2>
+      <div className="row linkBox">
+      <a href="https://www.linkedin.com/in/jasonmsaenz/" className="col-md-3" target="_blank" rel="noopener noreferrer">
+          <img 
+            className="logo"
+            id="git"
+            src={require("./logos/In-2C-66px-TM.png")}
+            alt="Linkedin"
+          />
+        </a>
+        <a href="https://github.com/jmsaenz5" className="col-md-3" target="_blank" rel="noopener noreferrer">
+          <img 
+            className="logo"
+            id="linked"
+            src={require("./logos/GitHub-Mark-64px.png")}
+            alt="GitHub"
+          />
+        </a>
+        <a href="https://stackoverflow.com/users/8468477/jmsaenz5?tab=profile" className="col-md-3" target="_blank" rel="noopener noreferrer">
+          <img 
+            className="logo"
+            id="stack"
+            src={require("./logos/so-icon.png")}
+            alt="Stack Overflow"
+          />
+        </a>
+      </div>
+    </section>
   </nav>
 );
 
-export default connectWindow;
+export default ConnectWindow;

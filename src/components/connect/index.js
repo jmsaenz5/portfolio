@@ -1,1 +1,1 @@
-export {default} from "./connectWindow";
+export { default } from "./connectWindow";

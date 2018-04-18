@@ -3,13 +3,13 @@ import React from "react";
 
 const ConnectWindow = () => (
   <nav>
-    <section>
+    <section className="content">
       <h2 className="headline">Connect With Me</h2>
       <div className="row linkBox">
       <a href="https://www.linkedin.com/in/jasonmsaenz/" className="col-md-3" target="_blank" rel="noopener noreferrer">
           <img 
             className="logo"
-            id="git"
+            id="linked"
             src={require("./logos/In-2C-66px-TM.png")}
             alt="Linkedin"
           />
@@ -17,7 +17,7 @@ const ConnectWindow = () => (
         <a href="https://github.com/jmsaenz5" className="col-md-3" target="_blank" rel="noopener noreferrer">
           <img 
             className="logo"
-            id="linked"
+            id="git"
             src={require("./logos/GitHub-Mark-64px.png")}
             alt="GitHub"
           />

@@ -33,7 +33,7 @@
 
 .name {
   float: left;
-  margin: 10px 0 0 30px;
+  margin: 10px 0 0 0;
 }
 
 .high {
@@ -42,37 +42,41 @@
 }
 
 .divide {
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 0 20px;
+}
+.logo {
+  margin-top: 10px;
+}
+
+.foot {
+  margin: 0;
+  padding: 0;
+  font-size: small;
 }
 
 .title {
-  margin-left: 20px;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #081726;
   margin-bottom: 20px;
 }
 
 a:link.high {
-  color: #666666;
+  color: #081726;
   text-decoration: none;
 }
 
 a:visited.high {
-  color: #7e9899;
+  color: #476589;
   text-decoration: none;
 }
 
 a:hover.high {
-  background-color: #4aaaaf;
+  background-color: #dde7f5;
   text-decoration: none;
 }
 
 a:active.high {
   color: black;
   text-decoration: none;
-}
-
-.high {
-  float: right;
 }
 
 .main {
@@ -84,7 +88,7 @@ a:active.high {
 }
 
 .headline {
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #081726;
 }
 
 #stack {
@@ -92,7 +96,12 @@ a:active.high {
   height: 95px;
   position: relative;
   bottom: 14px;
-  right: 9px;
+  right: 5px;
+  
+}
+
+#git {
+  margin-left: 10px;
 }
 
 .headshot {
@@ -100,23 +109,41 @@ a:active.high {
   height: 270px;
   float: left;
   margin: 5px 10px 10px 5px;
-  padding-left: 20px;
 }
 
 header {
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #081726;
   margin-bottom: 20px;
 }
 
 .copy {
-  padding-left: 20px;
-  margin: auto 5px;
+  margin: 5px 5px;
 }
 
 footer {
   clear: both;
-  background-color: #666666;
+  background-color: #a39990;
   text-align: center;
-  padding: 30px;
-  border-top: 10px solid #4aaaaf;
+  border-top: 10px solid #081726;
+  padding: 10px 0;
+}
+
+body {
+  background-color: #476589;
+}
+
+.content {
+  background-color: #dde7f5;
+  padding: 10px 15px 0 10px;
+}
+
+.content-main {
+  padding-bottom: 20px;
+}
+
+.top {
+  padding: 10px 0 20px 0;
+  background-color: #dde7f5;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #081726;
 }

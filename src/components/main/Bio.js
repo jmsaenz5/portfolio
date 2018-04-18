@@ -1,7 +1,8 @@
 import React from "react";
 
 const Bio = () => (
-  <div>
+  <div className="content content-main">
+      <h2 className="title content">About Me</h2>
     <img
       className="headshot"
       src={require("../../assets/images/headshot.jpg")}
@@ -15,7 +16,6 @@ const Bio = () => (
       from Houston Baptist University with a double major in professional
       writing and mass communication.
     </p>
-<br />
     <p className="copy">
       Even before graduation, Jason began a position as a copy editor for the
       Times-News in Twin Falls, Idaho. After moving back to his hometown, he
@@ -25,7 +25,6 @@ const Bio = () => (
       district executive of Southeast Alaska. He explored the beautiful islands
       of the region while running the area’s day-to-day operations.
     </p>
-<br />
     <p className="copy">
       Despite his many adventures in the Last Frontier, Jason missed the mean,
       humid streets of Houston. He returned to Texas and spent the next two

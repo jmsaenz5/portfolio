@@ -3,8 +3,8 @@ import React from "react";
 
 const ConnectWindow = () => (
   <nav>
-    <section className="content">
-      <h2 className="headline">Connect With Me</h2>
+    <section className="content content-main">
+      <h3 className="headline">Connect With Me</h3>
       <div className="row linkBox">
       <a href="https://www.linkedin.com/in/jasonmsaenz/" className="col-md-3" target="_blank" rel="noopener noreferrer">
           <img 

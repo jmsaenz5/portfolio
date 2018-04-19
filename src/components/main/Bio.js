@@ -4,7 +4,7 @@ const Bio = () => (
   <div className="content content-main">
       <h2 className="title content">About Me</h2>
     <img
-      className="headshot"
+      className="headshot img-fluid"
       src={require("../../assets/images/headshot.jpg")}
       alt="Jason Saenz"
     />

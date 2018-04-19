@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #212529;
   height: 150px;
   padding: 20px;
   color: white;
@@ -55,22 +55,17 @@
 }
 
 .title {
-  border-bottom: 2px solid #081726;
+  border-bottom: 3px solid #212529;
   margin-bottom: 20px;
 }
 
 a:link.high {
-  color: #081726;
+  color: #212529;
   text-decoration: none;
 }
 
 a:visited.high {
   color: #476589;
-  text-decoration: none;
-}
-
-a:hover.high {
-  background-color: #dde7f5;
   text-decoration: none;
 }
 
@@ -88,7 +83,8 @@ a:active.high {
 }
 
 .headline {
-  border-bottom: 2px solid #081726;
+  border-bottom: 2px solid #212529;
+  color: #212529
 }
 
 #stack {
@@ -96,36 +92,41 @@ a:active.high {
   height: 95px;
   position: relative;
   bottom: 14px;
-  right: 5px;
-  
+  left: 5px;  
+}
+#linked {
+  margin-left: 10px
 }
 
 #git {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .headshot {
-  width: 405px;
-  height: 270px;
+  max-width: 30%;
+  height: auto;
   float: left;
   margin: 5px 10px 10px 5px;
+  border-radius: 4px;
 }
 
 header {
-  border-bottom: 2px solid #081726;
+  border-bottom: 2px solid #212529;
   margin-bottom: 20px;
 }
 
 .copy {
   margin: 5px 5px;
+  color: #212529
 }
 
 footer {
   clear: both;
   background-color: #a39990;
   text-align: center;
-  border-top: 10px solid #081726;
+  border-top: 10px solid #212529;
   padding: 10px 0;
+  border-radius: 4px;
 }
 
 body {
@@ -139,11 +140,61 @@ body {
 
 .content-main {
   padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .top {
   padding: 10px 0 20px 0;
   background-color: #dde7f5;
   margin-bottom: 30px;
-  border-bottom: 5px solid #081726;
+  border-bottom: 5px solid #212529;
+}
+
+.tab {
+  height: 40px;
+  max-width: 120px;
+  background-color: #a39990;
+  text-align: center;
+  position: relative;
+  left: 15px;
+}
+
+#tab1 {
+  border-top: 2px solid #212529;
+  border-right: 2px solid #212529;
+  border-left: 2px solid #212529;
+}
+
+#tab2 {
+  border-top: 2px solid #212529;
+  border-right: 2px solid #212529;
+}
+
+#tab3 {
+  border-top: 2px solid #212529;
+  border-right: 2px solid #212529;
+}
+
+a:link.foot {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:visited.foot {
+  color: #476589;
+  text-decoration: none;
+}
+
+.submit {
+  background-color: #212529;
+  float: right;
+}
+
+button.hover.submit {
+  background-color: #a39990;
+}
+
+.contact {
+  margin-bottom: 15px;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-const Nav = () => (
+const Nav = props => (
   <div className="links">
-   <a className="high" href="/contact">
+   <a className="high" href={"/contact"}>
       Contact
     </a>
     <p className="high divide"> | </p>

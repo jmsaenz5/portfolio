@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./pages/about";
-// import Contact from "./pages/contact";
+import Contact from "./pages/contact";
 // import Portfolio from "./pages/portfolio";
 import "./App.css";
 import { Col, Row, Container } from "./components/Grid";
 import Name from "./components/Name";
 import Nav from "./components/Nav";
 
-const App = () => (
+const App = props => (
   <Router>
     <div>
       <div className="top">
@@ -26,6 +26,7 @@ const App = () => (
       </div>
       <Switch>
         <Route exact path="/" component={Main} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
     </div>
   </Router>

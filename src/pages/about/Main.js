@@ -5,10 +5,11 @@ import { Col, Row, Container } from "../../components/Grid";
 import ConnectWindow from "../../components/connect";
 import Button from "../../components/Tab";
 import Form from "../../components/Form";
+import Portfolio from "../../components/Port";
 
 class Main extends Component {
   state = {
-    page: <Bio />,
+    page: Bio,
     name: "",
     phone: "",
     email: "",
@@ -20,35 +21,27 @@ class Main extends Component {
     this.setState({
       [name]: value
     });
-    console.log("hello", this.state.name);
+    console.log("hello", this.state);
   };
 
   formTab = event => {
     event.preventDefault();
     this.setState({
-      page: (
-        <Form
-          handleInputChange={this.handleInputChange}
-          name={this.state.name}
-          phone={this.state.phone}
-          email={this.state.email}
-          comments={this.state.comments}
-        />
-      )
+      page: Form
     });
   };
 
-  // portTab = event => {
-  //   event.preventDefault();
-  //   this.setState({
-  //     page: Portfolio
-  //   })
-  // }
+  portTab = event => {
+    event.preventDefault();
+    this.setState({
+      page: Portfolio
+    })
+  }
 
   aboutTab = event => {
     event.preventDefault();
     this.setState({
-      page: <Bio />
+      page: Bio
     });
   };
 
@@ -59,13 +52,21 @@ class Main extends Component {
           <Button id="tab1" onClick={this.aboutTab}>
             About Me
           </Button>
-          <Button id="tab2">Portfolio</Button>
+          <Button id="tab2" onClick={this.portTab}>Portfolio</Button>
           <Button id="tab3" onClick={this.formTab}>
             Contact
           </Button>
         </Row>
         <Row>
-          <Col size="md-8">{this.state.page}</Col>
+          <Col size="md-8">
+            <this.state.page
+              handleInputChange={this.handleInputChange}
+              name={this.state.name}
+              phone={this.state.phone}
+              email={this.state.email}
+              comments={this.state.comments}
+            />
+          </Col>
           <Col size="md-4">
             <ConnectWindow />
           </Col>

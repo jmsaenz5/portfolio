@@ -162,18 +162,26 @@ body {
 
 #tab1 {
   border-top: 2px solid #212529;
-  border-right: 2px solid #212529;
+  border-right: 1px solid #212529;
   border-left: 2px solid #212529;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0px;
 }
 
 #tab2 {
   border-top: 2px solid #212529;
-  border-right: 2px solid #212529;
+  border-right: 1px solid #212529;
+  border-left: 1px solid #212529;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 #tab3 {
   border-top: 2px solid #212529;
   border-right: 2px solid #212529;
+  border-left: 1px solid #212529;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
 }
 
 a:link.foot {
@@ -188,6 +196,7 @@ a:visited.foot {
 
 .submit {
   background-color: #212529;
+  border-color: #212529;
   float: right;
 }
 
@@ -196,5 +205,19 @@ button.hover.submit {
 }
 
 .contact {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+label {
+  margin: 5px;
+}
+
+.projectImage {
+  max-width: 280px;
+  height: auto;
+}
+
+.projectTitle {
+  border-bottom: 2px solid #212529;
 }

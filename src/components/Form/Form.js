@@ -12,6 +12,7 @@ const Form = props => (
           className="form-control contact"
           onChange={props.handleInputChange}
           name="name"
+          autoFocus
         />
         <label htmlFor="phone">Phone</label>
         <input
@@ -29,7 +30,7 @@ const Form = props => (
           onChange={props.handleInputChange}
           name="email"
         />
-        <label htmlFor="comments">Comments</label>
+        <label htmlFor="comments">Message</label>
         <textarea
           className="form-control contact"
           rows="5"

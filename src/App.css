@@ -70,7 +70,7 @@ a:visited.high {
 }
 
 a:active.high {
-  color: black;
+  color: #a39990;
   text-decoration: none;
 }
 
@@ -216,8 +216,16 @@ label {
 .projectImage {
   max-width: 280px;
   height: auto;
+  margin: 5px;
+
 }
 
 .projectTitle {
   border-bottom: 2px solid #212529;
+  margin-top: 5px;
+}
+
+.hangman {
+  position: relative;
+  left: 100px;
 }

@@ -5,16 +5,19 @@ import { Col, Row, Container } from "../../components/Grid";
 import ConnectWindow from "../../components/connect";
 import Button from "../../components/Tab";
 import Form from "../../components/Form";
+import Portfolio from "../../components/Port";
 
 class Contact extends Component {
-  state = {
-    page: Form,
-    name: "",
-    phone: "",
-    email: "",
-    comments: ""
-  };
-
+  constructor() {
+    super();
+    this.state = {
+      page: Form,
+      name: "",
+      phone: "",
+      email: "",
+      comments: ""
+    };
+  }
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -30,12 +33,12 @@ class Contact extends Component {
     });
   };
 
-  // portTab = event => {
-  //   event.preventDefault();
-  //   this.setState({
-  //     page: Portfolio
-  //   })
-  // }
+  portTab = event => {
+    event.preventDefault();
+    this.setState({
+      page: Portfolio
+    });
+  };
 
   aboutTab = event => {
     event.preventDefault();
@@ -51,7 +54,9 @@ class Contact extends Component {
           <Button id="tab1" onClick={this.aboutTab}>
             About Me
           </Button>
-          <Button id="tab2">Portfolio</Button>
+          <Button id="tab2" onClick={this.portTab}>
+            Portfolio
+          </Button>
           <Button id="tab3" onClick={this.formTab}>
             Contact
           </Button>

@@ -8,14 +8,17 @@ import Form from "../../components/Form";
 import Portfolio from "../../components/Port";
 
 class Main extends Component {
-  state = {
-    page: Bio,
-    name: "",
-    phone: "",
-    email: "",
-    comments: ""
-  };
-
+  constructor() {
+    super();
+    this.state = {
+      page: Bio,
+      name: "",
+      phone: "",
+      email: "",
+      comments: ""
+    };
+  }
+  
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -35,8 +38,8 @@ class Main extends Component {
     event.preventDefault();
     this.setState({
       page: Portfolio
-    })
-  }
+    });
+  };
 
   aboutTab = event => {
     event.preventDefault();
@@ -52,7 +55,9 @@ class Main extends Component {
           <Button id="tab1" onClick={this.aboutTab}>
             About Me
           </Button>
-          <Button id="tab2" onClick={this.portTab}>Portfolio</Button>
+          <Button id="tab2" onClick={this.portTab}>
+            Portfolio
+          </Button>
           <Button id="tab3" onClick={this.formTab}>
             Contact
           </Button>

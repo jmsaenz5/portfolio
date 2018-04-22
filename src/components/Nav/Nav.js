@@ -6,7 +6,7 @@ const Nav = props => (
       Contact
     </a>
     <p className="high divide"> | </p>
-    <a className="high" href="/">
+    <a className="high" href="/portfolio">
       Portfolio
     </a>
     <p className="high divide"> | </p>

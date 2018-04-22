@@ -21,6 +21,13 @@ const Portfolio = () => (
               />
             </a>
           </Col>
+          <Col size="md-5">
+          <h5 className="projectTitle hangman">JavaScript Hangman Game</h5>
+          <a href="https://jmsaenz5.github.io/Hangman-Game/" target="_blank"
+              rel="noopener noreferrer">
+              <img className="projectImage hangman" src={require("../../assets/images/hangman.png")} alt="Hangman Game" />
+              </a>
+          </Col>
         </Row>
       </Container>
     </div>

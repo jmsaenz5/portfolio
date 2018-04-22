@@ -13,6 +13,7 @@ const Form = props => (
           onChange={props.handleInputChange}
           name="name"
           autoFocus
+          required
         />
         <label htmlFor="phone">Phone</label>
         <input
@@ -21,6 +22,7 @@ const Form = props => (
           className="form-control contact"
           onChange={props.handleInputChange}
           name="phone"
+          required
         />
         <label htmlFor="email">Email</label>
         <input
@@ -29,6 +31,7 @@ const Form = props => (
           className="form-control contact"
           onChange={props.handleInputChange}
           name="email"
+          required
         />
         <label htmlFor="comments">Message</label>
         <textarea
@@ -37,6 +40,7 @@ const Form = props => (
           name="comments"
           value={props.comments}
           onChange={props.handleInputChange}
+          required
         />
         <button className="btn btn-primary submit">Submit</button>
       </div>

@@ -1,19 +1,20 @@
 import React from "react";
+import { Link} from "react-router-dom";
 
 const Nav = props => (
   <div className="links">
-   <a className="high" href="/contact">
+   <Link className="high" to="/contact">
       Contact
-    </a>
+    </Link>
     <p className="high divide"> | </p>
-    <a className="high" href="/portfolio">
+    <Link className="high" to="/portfolio">
       Portfolio
-    </a>
+    </Link>
     <p className="high divide"> | </p>
     
-    <a className="high" href="/">
+    <Link className="high" to="/">
       About Me
-    </a>
+    </Link>
   </div>
 );
 

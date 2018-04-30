@@ -59,17 +59,17 @@
   margin-bottom: 20px;
 }
 
-a:link.high {
+.high {
   color: #212529;
   text-decoration: none;
 }
 
-a:visited.high {
+Link:visited.high {
   color: #476589;
   text-decoration: none;
 }
 
-a:active.high {
+Link:active.high {
   color: #a39990;
   text-decoration: none;
 }

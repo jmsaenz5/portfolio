@@ -3,7 +3,7 @@ import React from "react";
 const Form = props => (
   <div className="content content-main">
     <h2 className="title content">Contact</h2>
-    <form className="content-main">
+    <form method="POST" className="content-main">
       <div className="form-group">
         <label htmlFor="name">Name</label>
         <input

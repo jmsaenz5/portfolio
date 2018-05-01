@@ -42,7 +42,7 @@ const Form = props => (
           onChange={props.handleInputChange}
           required
         />
-        <button className="btn btn-primary submit">Submit</button>
+        <button onClick={props.handleSubmit} className="btn btn-primary submit">Submit</button>
       </div>
     </form>
   </div>

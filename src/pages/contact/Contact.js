@@ -24,18 +24,18 @@ class Contact extends Component {
     this.setState({
       [name]: value
     });
-    console.log("hello", this.state);
   };
 
  handleSubmit = async (event) => {
-    event.preventDefault;
+    event.preventDefault();
     const { name, phone, email, comments } = this.state;
-    const form = await axios.post("/api/contact", {
+    const form = await axios.post("/contact", {
         name,
         phone,
         email,
         comments
     })
+    console.log(form);
   };
 
   formTab = event => {

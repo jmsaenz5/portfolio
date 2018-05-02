@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
 app.use(express.static("client/build"));
-app.post("/api/contact", (req, res) => {
-    console.log(res);
+app.post("/contact", (req, res) => {
+    console.log(req.body);
 })
 // Start the API server
 app.listen(PORT, function() {

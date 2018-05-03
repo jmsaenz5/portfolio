@@ -26,21 +26,24 @@ class Contact extends Component {
     });
   };
 
- handleSubmit = async (event) => {
+  handleSubmit = async event => {
     event.preventDefault();
     const { name, phone, email, comments } = this.state;
-    const form = await axios.post("/contact", {
+    const form = await axios
+      .post("/contact", {
         name,
         phone,
         email,
         comments
-    });
-    this.setState({
-      name: "",
-      phone: "",
-      email: "",
-      comments: ""
-    })
+      })
+      .then(
+        this.setState({
+          name: "",
+          phone: "",
+          email: "",
+          comments: ""
+        })
+      );
   };
 
   formTab = event => {

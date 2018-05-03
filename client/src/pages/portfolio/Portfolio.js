@@ -36,13 +36,15 @@ class PortPage extends Component {
         phone,
         email,
         comments
-    });
-    this.setState({
-      name: "",
-      phone: "",
-      email: "",
-      comments: ""
     })
+    .then(
+      this.setState({
+        name: "",
+        phone: "",
+        email: "",
+        comments: ""
+      })
+    );
   };
 
   formTab = event => {

@@ -2,19 +2,26 @@ import React from "react";
 
 const Bio = () => (
   <div className="content content-main">
-      <h2 className="title content">About Me</h2>
+    <h2 className="title content">About Me</h2>
     <img
       className="headshot img-fluid"
       src={require("../../assets/images/headshot.jpg")}
       alt="Jason Saenz"
     />
     <p className="copy">
-      Jason Saenz was born and raised in Houston, Texas, where he did some
-      things and had some experiences. After he graduated from high school, he
-      wandered around Texas, attending various universities, and working during
-      the summers as a river and hiking guide in Alaska. He ultimately graduated
-      from Houston Baptist University with a double major in professional
-      writing and mass communication.
+      Jason Saenz is a full-stack web developer with a wide range of skills,
+      including JavaScript, React.js, Node.js, MySQL. He's also fluent in HTML,
+      CSS and popular CSS libraries, AJAX and XHR libraries, and MongoDB.
+      Essentially, if it's necessary for web development, he'll know it by the
+      time you need him to use it.
+    </p>
+    <p className="copy">
+      Born and raised in Houston, Texas, Jason did some things and had some
+      experiences. After he graduated from high school, he wandered around
+      Texas, attending various universities, and working during the summers as a
+      river and hiking guide in Alaska. He ultimately graduated from Houston
+      Baptist University with a double major in professional writing and mass
+      communication.
     </p>
     <p className="copy">
       Even before graduation, Jason began a position as a copy editor for the

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Bio from "../../components/main/Bio";
 import Footer from "../../components/footer";
 import { Col, Row, Container } from "../../components/Grid";
@@ -25,6 +26,23 @@ class PortPage extends Component {
       [name]: value
     });
     console.log("hello", this.state);
+  };
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const { name, phone, email, comments } = this.state;
+    const form = await axios.post("/contact", {
+        name,
+        phone,
+        email,
+        comments
+    });
+    this.setState({
+      name: "",
+      phone: "",
+      email: "",
+      comments: ""
+    })
   };
 
   formTab = event => {
@@ -66,6 +84,7 @@ class PortPage extends Component {
           <Col size="md-8">
             <this.state.page
               handleInputChange={this.handleInputChange}
+              handleSubmit={this.handleSubmit}
               name={this.state.name}
               phone={this.state.phone}
               email={this.state.email}

@@ -34,8 +34,13 @@ class Contact extends Component {
         phone,
         email,
         comments
+    });
+    this.setState({
+      name: "",
+      phone: "",
+      email: "",
+      comments: ""
     })
-    console.log(form);
   };
 
   formTab = event => {

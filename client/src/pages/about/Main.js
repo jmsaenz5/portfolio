@@ -25,7 +25,6 @@ class Main extends Component {
     this.setState({
       [name]: value
     });
-    console.log("hello", this.state);
   };
 
   handleSubmit = async event => {

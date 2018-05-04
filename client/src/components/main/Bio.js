@@ -10,10 +10,8 @@ const Bio = () => (
     />
     <p className="copy">
       Jason Saenz is a full-stack web developer with a wide range of skills,
-      including JavaScript, React.js, Node.js, MySQL. He's also fluent in HTML,
+      including JavaScript, React.js, Node.js, and MySQL. He's also fluent in HTML,
       CSS and popular CSS libraries, AJAX and XHR libraries, and MongoDB.
-      Essentially, if it's necessary for web development, he'll know it by the
-      time you need him to use it.
     </p>
     <p className="copy">
       Born and raised in Houston, Texas, Jason did some things and had some
